@@ -1,0 +1,95 @@
+$light: white;
+$dark: black;
+
+@import "/node_modules/bootstrap/scss/bootstrap.scss";
+
+.navbar {
+  width: 100%;
+  z-index: 999;
+  transition: all 0.5s ease;
+}
+.navbar-light .navbar-nav .nav-link {
+  padding: 20px;
+  color: black;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: black;
+
+  transform: scale(1.2);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: white;
+
+  transform: scale(1.2);
+}
+
+.navbar-brand {
+  font-size: 30px;
+  font-weight: bold;
+}
+.navbar-nav {
+  transition: all 0.5s ease;
+}
+@media screen and (max-width: 995px) {
+  .navbar-nav {
+    height: 100vh;
+  }
+  .hide {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+  .nav-item {
+    margin: 10px 0 20px 0;
+  }
+  .nav-link {
+    padding: 15px 0 15px 0;
+    text-align: center;
+  }
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+    background-color: black;
+    transform: scale(1.1);
+  }
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: black;
+    background-color: white;
+    transform: scale(1.1);
+  }
+  .nav-item {
+    width: 70%;
+    margin-left: 60px;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 50px;
+    background-color: white;
+    color: black;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+  }
+  .navbar-light .navbar-nav .nav-link:focus {
+    display: none;
+  }
+  .navbar-dark .navbar-nav .nav-link:focus {
+    display: none;
+  }
+  
+}
+
